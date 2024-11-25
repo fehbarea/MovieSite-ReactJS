@@ -11,16 +11,7 @@ function App() {
       <Header />
       <Banner image={'home'} />
       <Container>
-
-      <h2>Geografia</h2>
-
-        <section className="cards">
-
-          {
-            videos.map(video => <Card id={video.id} key={video.id}/>)
-          }
-
-        </section>
+        
       </Container>
       <Footer />
     </div>
