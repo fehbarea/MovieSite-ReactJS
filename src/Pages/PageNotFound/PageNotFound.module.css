@@ -1,0 +1,25 @@
+.PageNotFound {
+    height: 100vh;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   flex-direction: column;
+   background-color: #222;
+
+}
+
+.container {
+    padding-top: 84px;
+    height: 85vh;
+    width: 100%;
+    color:#fff;
+    text-align: center;
+}
+
+.container img{
+    height: 450px;
+    padding-block: 1.5rem;
+}
+.container h2{
+    padding-block: 1.5rem;
+}
