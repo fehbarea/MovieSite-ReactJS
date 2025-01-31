@@ -1,0 +1,15 @@
+.container{
+    min-width: 280px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.container input{
+    min-width: 100vh;
+    padding: 15px 10px;
+    font-size: 1.125rem;
+    border: 1px solid #030303;
+    border-radius: 5px;
+    margin-block: 0.5rem;
+    outline: none;
+}
