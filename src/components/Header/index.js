@@ -12,6 +12,7 @@ function Header(){
                 <Link to="/">Home</Link>
                 {/* <Link to="/watch">Assistir</Link> */}
                 <Link to='/Search'>Pesquisar</Link>
+                <Link to="/favorites">Favoritos</Link>
 
             </nav>
         </header>
