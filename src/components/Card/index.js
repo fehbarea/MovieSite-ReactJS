@@ -7,11 +7,11 @@ function Card({id}){
     return(
         <section className={styles.card}>
             <Link to={`/watch/${id}`}>
-                <img width={250} src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`} alt="Capa"/>
+                <img width={250} src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`} alt="Capa" className={styles.capa}/>
             </Link>
 
-            <figure>
-                
+            <figure className={styles.icon}>
+                <img src={iconFavorite} alt='Icone'/>
             </figure>
         </section>
     );
