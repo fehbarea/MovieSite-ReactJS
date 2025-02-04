@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import styles from "./Card.module.css"
-import iconFavorite from './favorite.png';
-import iconUnfavorite from './unfavorite.png';
+import iconUnfavorite from './favorite.png';
+import iconFavorite from './unfavorite.png';
+import { useContext } from "react";
+import { useFavoriteContext } from "../../context/Favorites";
 
 function Card({id}){
+
+    const {favorite, addFavorite} = useFavoriteContext();
+    const isFavorite = favorite.some((item) => item.id === id);
+    const iconFav = isFavorite ? iconFavorite : iconUnfavorite
+
     return(
         <section className={styles.card}>
             <Link to={`/watch/${id}`}>
@@ -11,7 +18,11 @@ function Card({id}){
             </Link>
 
             <figure className={styles.icon}>
-                <img src={iconFavorite} alt='Icone'/>
+                <img 
+                    src={iconFav} 
+                    alt='Icone'
+                    onClick={() => addFavorite({id})}
+                />
             </figure>
         </section>
     );
